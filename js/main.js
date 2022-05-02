@@ -12,8 +12,6 @@ for( let i = 1; i <= 100; i++ ){
     const element = document.createElement("li");
 
     element.classList.add("list-item");
-    element.innerText = i;
-    list.append(element)
 
     if(i % 3 === 0 && i % 5 === 0){
         element.classList.add("bg-both")
@@ -29,6 +27,9 @@ for( let i = 1; i <= 100; i++ ){
         element.classList.add("bg-five")
 
         element.innerText = "Buzz";
+        list.append(element)
+    }else{
+        element.innerText = i;
         list.append(element)
     }
     
