@@ -15,14 +15,23 @@ for( let i = 1; i <= 100; i++ ){
     element.innerText = i;
     list.append(element)
 
-    if(i % 3 === 0){
+    if(i % 3 === 0 && i % 5 === 0){
+        element.classList.add("bg-both")
+
+        element.innerText = "FizzBuzz";
+        list.append(element)
+    }else if(i % 3 === 0){
         element.classList.add("bg-three")
+
         element.innerText = "Fizz";
         list.append(element)
     }else if(i % 5 === 0){
         element.classList.add("bg-five")
+
         element.innerText = "Buzz";
         list.append(element)
+    }
+    
 }
 
 
