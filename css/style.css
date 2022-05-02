@@ -27,7 +27,7 @@ h1{
     gap: 20px;
 }
 
-.list-item{
+.list-item, .list-item-three{
     width: calc(100% / 7 - 20px);
     height: 120px;
     text-align: center;
@@ -35,3 +35,16 @@ h1{
     font-size: 24px;
     background-color: #1389b2;
 }
+
+.bg-three{
+    background-color: #0bd6a1;
+}
+
+.bg-five{
+    background-color: #ffd166;
+}
+
+.bg-both{
+    background-color: #f0466f;
+}
+
